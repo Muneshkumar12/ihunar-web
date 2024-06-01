@@ -1,97 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-.working-process {
-    padding: 45px 40px !important;
+:root {
+    --font-family: "Nunito", sans-serif;
+    --pink-color: #971D9A;
+    --blue-color: #333790;
+    --bg-color: #D1BEDA;
+    --text-black: #212529;
+    --para-color: #6B6B84;
 }
 
-.item-div {
-    display: flex;
-    padding: 20px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 
-.item-div {
-    /* Add styling to the container element */
-    display: flex;
-    /* Make the container a flexbox */
-    border: 1px solid red;
-    height: 150px;
-    /* word-wrap: break-word; */
+.timeline-div>div {
+    padding-left: 100px;
 }
 
-/* .item-div span {
-    background-color: #FFFFFF;
-    box-shadow: #e3e7f2 0px 0px 0px 8px;
-    height: 65px;
-    width: 80px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
-    font-size: 30px;
-    font-style: italic;
-    font-weight: 800;
-    color: var(--pink-color);
-    margin-right: 10px; /* Add margin for spacing between spans */
-/* position: relative;
-  } */
-.item-div span,p:nth-child(1) {
-    background-color: #FFFFFF;
-    box-shadow: #e3e7f2 0px 0px 0px 8px;
-    height: 65px;
-    width: 80px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
-    font-size: 30px;
-    font-style: italic;
-    font-weight: 800;
-    color: var(--pink-color);
+.timeline-data,
+.timeline-data-3 {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
 }
 
 
-
-.item-div span::before {
-    content: "";
+.timeline-data::before {
+    background: linear-gradient(75deg, #971d9a 10%, #293b90) !important;
+    content: '';
+    height: 100%;
+    left: 40px;
     position: absolute;
-    height: 100px;
+    top: 20px;
     width: 1px;
-    background-color: var(--pink-color);
-    left: 50%;
-    top: 70px;
-    z-index: -2;
+    z-index: -1;
 }
 
-.item-div span::after {
-    content: "";
+.timeline-data::after {
+    -webkit-animation: fade-down 1.5s linear infinite;
+    animation: fade-down 1.5s linear infinite;
+    bottom: 0px;
+    color: #98189a;
+    content: "\2304";
+    font-size: 30px;
+    left: 32px;
     position: absolute;
-    height: 100px;
-    width: 1px;
-    left: 50%;
-    top: 70px;
-    z-index: -2;
-    color: var(--pink-color); /* Adjust color if needed */
+    animation: move 2s ease-in-out infinite alternate;
 }
 
-.item-div div {
-    margin-left: 30px;
-    width: 100%;
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: .5;
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
-.item-div div h1 {
+.count-box {
+    border-radius: 50%;
+    background-color: #fff;
+    color: #98189A;
+    box-shadow: 0 0 0 7px #edf1fe;
+    font-size: 30px;
+    font-weight: 720;
+    font-style: italic;
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+}
+
+.timeline-heading {
+    margin-bottom: 10px;
     font-size: 24px;
     font-weight: 800;
     font-family: var(--font-family);
-
 }
 
-.item-div div p {
-    font-size: 17px;
+.timeline-para {
+    font-size: 16px;
     font-weight: 600;
-    color: var(--para-color);
     line-height: 30px;
+    margin-bottom: 15px;
+    color: #6B6B84;
     font-family: var(--font-family);
 }

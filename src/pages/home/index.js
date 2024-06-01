@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../../styles/home.css';
 import Layout from '../../layout';
-import { ProjectSec, SecHeader } from '../../components';
+import { ProjectSec, SecHeader, WorkingProcessSec } from '../../components';
 import homeBanner from '../../images/home-sec-poster.png';
 import bannerTwo from '../../images/home-sec-poster-2.png';
 import flowerImg from '../../images/flower.png';
@@ -285,8 +285,8 @@ const Home = () => {
             Greater control over different<br /> projects through Agile<br /> Methodology.
           </>
         } para="Our major role is customer satisfaction by rapid delivery of softwares." />
+      <WorkingProcessSec />
       </div>
-
     </Layout>
   )
 }
