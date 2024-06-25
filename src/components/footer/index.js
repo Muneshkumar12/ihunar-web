@@ -33,10 +33,10 @@ const Footer = () => {
                         <div className='footer-contact-inner'><i className="fa-regular fa-clock"></i> <p className='footer-contact-para'>Opening Hours: 09:00 - 17:00</p></div>
                     </div>
                 </div>
-            </div>
             <div className='footer-last'>
                 <hr />
                 <p className='last-para'>© 2023 All Rights Reserved. iHunar Private Limited</p>
+            </div>
             </div>
         </div>
     )

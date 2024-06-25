@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 const PageHeader = ({ pageName}) => {
     const Nevigate = useNavigate()
     return (
-        <div className='page-header-sec'>
+        <div className='page-header-sec container'>
             <h1 className='page-header-name'>{pageName}</h1>
             <div className='page-header-para'><a onClick={() => Nevigate('/')}>Home</a>	&gt; {pageName}</div>
             <div className='page-header-flower'>
