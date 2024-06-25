@@ -189,6 +189,7 @@ a:hover {
 
   .nav {
     border-top: none;
+    padding: 0px 20px;
   }
 
   .nav__toggle {
