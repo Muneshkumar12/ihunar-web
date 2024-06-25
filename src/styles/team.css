@@ -16,13 +16,9 @@
 }
 
 .our-team {
-    padding: 90px 60px;
+    padding: 50px 0px;
 }
-@media only screen and (max-width:450px) {
-    .our-team {
-        padding: 90px 20px;
-    }
-}
+
 
 .team-card {
     border: 1px solid #F5F3F2;
@@ -31,6 +27,7 @@
     align-items: center !important;
     justify-content: center !important;
     transition: transform 0.2s ease-in-out;
+    margin-top: 5px;
 }
 
 .team-card:hover {

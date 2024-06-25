@@ -1,7 +1,5 @@
-
-
 #home-main {
-    padding: 100px 75px;
+    padding: 100px 0px;
     background-color: var(--bg-color);
     box-shadow: #EFE8F2 0px -300px 100px -28px inset;
     /*  */
@@ -15,7 +13,7 @@
 }
 
 .home-data h1 {
-    font-size: 57px;
+    font-size: 5vw;
     font-weight: 800;
     color: #232529;
     margin-top: 25px;
@@ -54,17 +52,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding-top: 30px;
 }
 
 .home-poster>img {
     width: 100%;
-    height: 23rem;
+    height: 100%;
 }
 
 .home-sec-two {
-    /* border: 1px solid red; */
-    padding: 100px 75px;
+    padding: 100px 0px;
 
 }
 
@@ -93,7 +90,7 @@
 }
 
 .home-sec-two-data>h1 {
-    font-size: 44px;
+    font-size: 3vw !important;
     font-weight: 800;
     color: var(--text-black);
     font-family: var(--font-family);
@@ -113,7 +110,7 @@
 }
 
 .services-sec {
-    padding: 100px 75px;
+    padding: 100px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,7 +141,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin:50px 0px;
+    margin: 50px 0px;
 }
 
 .heading h1 {
@@ -198,7 +195,7 @@
 }
 
 .Technology-sec {
-    padding: 100px 75px;
+    padding: 100px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -279,20 +276,26 @@
 }
 
 
-.working-process{
-    padding: 100px 75px;
+.working-process {
+    padding: 100px 0px;
 }
-@media only screen and (max-width:450px) {
-    .services-sec {
-        padding: 100px 30px;
+
+
+@media only screen and (max-width:767px) {
+    .home-data {
+        align-items: center;
     }
-    .Technology-sec {
-        padding: 100px 35px;
+    .home-data h1 {
+        font-size: 8vw;
     }
-    .tehcnologyy-card-div {
-        padding: 10px;
+    .home-data p {
+        text-align: center;
     }
-    .working-process{
-        padding: 100px 30px;
+    .home-sec-two-data>h1 {
+    font-size: 7vw !important;
+    text-align: center;
+    }
+    .home-sec-two-data>p {
+        text-align: center;
     }
 }

@@ -40,7 +40,7 @@
 }
 
 .home-sec-two-data>h1 {
-    font-size: 44px;
+    font-size: 3vw !important;
     font-weight: 800;
     color: var(--text-black);
     font-family: var(--font-family);
@@ -53,15 +53,16 @@
     line-height: 30px;
     color: var(--para-color);
 }
-.heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-.heading h1 {
-    text-align: center;
-    line-height: 52px;
-    margin-top: 20px;
+@media only screen and (max-width:767px) {
+    .home-sec-two-data{
+        padding: 10px;
+    }
+    .home-sec-two-data>h1 {
+        font-size: 7vw !important;
+        text-align: center;
+    }
+    .home-sec-two-data>p {
+       text-align: center;
+    }
 }

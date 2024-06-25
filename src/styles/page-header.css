@@ -23,7 +23,9 @@
     height: 100%;
     padding: 100px 70px;
 }
-
+.page-header-sec>h1{
+    font-size: 3vw;
+}
 .page-header-name {
     font-size: 2.75rem ;
     font-weight: 800;
@@ -103,3 +105,15 @@
       transform: translateY(0); 
     }
   }
+  @media only screen and (max-width:767px) {
+    .page-header-sec h1{
+        font-size: 6vw;
+        text-align: center;
+    }
+    .page-header-para{
+        text-align: center;
+    }
+    .page-header-flower,.page-header-circle,.page-header-image3{
+        display: none;
+    }
+}

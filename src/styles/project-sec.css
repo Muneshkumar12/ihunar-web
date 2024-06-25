@@ -15,7 +15,7 @@
     box-sizing: border-box;
 }
 .Project-div {
-    padding: 40px 75px 0px 75px;
+    /* padding: 40px 75px 0px 75px; */
     background-image: url('../images/proj.png');
     background-repeat: no-repeat;
     background-position: right;
@@ -31,7 +31,7 @@
 }
 
 .project-data h1 {
-    font-size: 44px;
+    font-size: 3vw;
     font-family: var(--font-family);
     font-weight: 800;
 }
@@ -73,5 +73,20 @@
 @media only screen and (max-width:960px) {
     .circle-shape1 img {
         display: none;
+    }
+}
+@media only screen and (max-width:767px) {
+    .project-data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .project-data h1 {
+        font-size: 7vw;
+        text-align: center;
+    }
+    .project-data p{
+       text-align: center;
     }
 }

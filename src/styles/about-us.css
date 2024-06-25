@@ -16,7 +16,7 @@
 }
 
 .about-us {
-    padding: 100px 60px;
+    padding: 100px 0px;
     background-image: url('../images/proj.png');
     background-repeat: no-repeat;
     background-size: 380px;
@@ -31,6 +31,7 @@
 
 .about-sec-header>img {
     width: 100%;
+    height: 100%;
 }
 
 .about-sec-2 {
@@ -51,4 +52,9 @@
     font-family: var(--font-family);
     line-height: 30px;
     margin-top: 10px;
+}
+@media only screen and (max-width:767px) {
+    .about-sec-data-2 ,.about-sec-data-2-para {
+        text-align: center;
+    }
 }
